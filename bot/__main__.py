@@ -43,17 +43,17 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("📢 Channel", 'https://t.me/JMDKH_Team')
+    buttons.buildbutton("👨🏽‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ", 'https://t.me/xerysiddiq')
     reply_markup = buttons.build_menu(1)
     uname = mention_html(update.message.from_user.id, update.message.from_user.first_name)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'🙌🏽Hey <b>{uname}</b>\n\n' \
-        '🌹 Welcome To One Of A Modified Anas Mirror Bot\n' \
+        '🌹 Welcome To One Of A Modified Xery Mirror Bot\n' \
         'This bot can Mirror all your links To Google Drive!\n' \
-        '👨🏽‍💻 Powered By: @JMDKH_Team'
+        '👨🏽‍💻 Powered By: @xerysiddiq'
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
-        sendMarkup('Not Authorized user', context.bot, update.message, reply_markup)
+        sendMarkup('You Cannot use Bot Here 🚫', context.bot, update.message, reply_markup)
 def restart(update, context):
     restart_message = sendMessage("Restarting...", context.bot, update.message)
     if Interval:
