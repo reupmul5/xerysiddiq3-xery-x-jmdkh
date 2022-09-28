@@ -122,7 +122,7 @@ def get_progress_bar_string(status):
 
 def get_readable_message():
     with download_dict_lock:
-        msg = f"ᴘᴏᴡᴇʀᴇᴅ ʙʏ xᴇʀʏ sɪᴅᴅɪϙ/n/n"
+        msg = f"𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 𝗫𝗘𝗥𝗬 𝗦𝗜𝗗𝗗𝗜𝗤\n\n"
         if STATUS_LIMIT is not None:
             tasks = len(download_dict)
             globals()['PAGES'] = ceil(tasks/STATUS_LIMIT)
